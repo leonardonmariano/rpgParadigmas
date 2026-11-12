@@ -1,3 +1,4 @@
-# Arquivos compilados e resultados locais de testes
+# Arquivos compilados
 *.class
 /build/
+/out/
