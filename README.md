@@ -69,8 +69,6 @@ javac -encoding UTF-8 -d build -sourcepath src testes/TestesRpg.java
 java -cp build TestesRpg
 ```
 
-> No VS Code, com a extensão *Extension Pack for Java*, também dá para abrir `src/rpg/app/Main.java` e clicar em **Run**.
-
 ---
 
 ## Como jogar
@@ -450,7 +448,7 @@ Um ponto importante: **nenhuma classe do domínio usa `System.out` ou `Scanner`*
 | Um novo alvo de ataque (ex.: portão) | criar uma classe que `implements Destrutivel` | `Personagem.atacar()` |
 | Um novo chefão | instanciar `Chefao` com outros valores, ou criar uma subclasse | `Combate` |
 
-O `Arqueiro` e o `Chefao` foram adicionados exatamente assim: nenhuma linha de `Combate` precisou mudar para que eles funcionassem.
+Isso pode ser conferido no código: `Combate`, `Masmorra` e `Inventario` não citam nenhuma classe concreta (`Guerreiro`, `Mago`, `Arqueiro`, `Chefao`, `PocaoCura`, `Arma`). O combate trata o Arqueiro e o Chefão sem nenhum `if` específico para eles.
 
 ### L: Liskov Substitution (Substituição de Liskov)
 
