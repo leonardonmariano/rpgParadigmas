@@ -1,6 +1,9 @@
+package rpg.apresentacao;
+
 import java.io.PrintStream;
 import java.util.Scanner;
 
+/** Implementacao concreta de EntradaSaida para o terminal. */
 public class ConsoleJogo implements EntradaSaida {
     private final Scanner entrada;
     private final PrintStream saida;

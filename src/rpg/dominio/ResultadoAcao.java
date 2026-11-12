@@ -1,4 +1,9 @@
-/** Informa ao combate se a acao gastou o turno e qual mensagem deve ser exibida. */
+package rpg.dominio;
+
+/**
+ * Resultado de uma acao do jogo: diz se a acao foi realizada (e gastou o turno)
+ * e qual mensagem deve ser mostrada. Assim as regras nao precisam imprimir nada (SRP).
+ */
 public class ResultadoAcao {
     private final boolean realizada;
     private final String mensagem;
